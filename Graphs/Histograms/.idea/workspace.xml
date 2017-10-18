@@ -11,26 +11,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Histogram_example_1.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Histogram_example_1.py">
+      <file leaf-file-name="Histogram_example_4.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.ipynb_checkpoints/Histogram_example_4.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="10" lean-forward="true" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-              <folding>
-                <element signature="e#49#80#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Histogram_example_2.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Histogram_example_2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-82">
-              <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-              <folding>
-                <element signature="e#21#52#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -42,12 +28,13 @@
       <list>
         <option value="$PROJECT_DIR$/Histogram_example_1.py" />
         <option value="$PROJECT_DIR$/Histogram_example_2.py" />
+        <option value="$PROJECT_DIR$/Histogram_example_3.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-26" />
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-19" />
+    <option name="y" value="251" />
     <option name="width" value="1276" />
     <option name="height" value="777" />
   </component>
@@ -73,6 +60,11 @@
             <path>
               <item name="Histograms" type="b2602c69:ProjectViewProjectNode" />
               <item name="Histograms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Histograms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Histograms" type="462c0819:PsiDirectoryNode" />
+              <item name=".ipynb_checkpoints" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -107,7 +99,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="23" width="1276" height="777" extended-state="6" />
+    <frame x="-19" y="251" width="1276" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959481" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -138,6 +130,16 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Histogram_example_2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="36" column="10" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="36" selection-end-column="10" />
+          <folding>
+            <element signature="e#21#52#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Histogram_example_1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -148,13 +150,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Histogram_example_2.py">
+    <entry file="file://$PROJECT_DIR$/Histogram_example_3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="e#21#52#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ipynb_checkpoints/Histogram_example_4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
