@@ -1,7 +1,6 @@
 ##
 ## Understanding the behavior of subplot II
 ## ==================================================
-import matplotlib.pyplot as plt
 
 '''
 subplot(number of rows, number of columns, position of the element in the structure)
