@@ -21,6 +21,7 @@ colors = ['red', 'tan', 'lime']
 ax0.hist(x, n_bins, normed=1, histtype='bar', color=colors, label=colors)
 ax0.legend(prop={'size': 10})
 ax0.set_title('bars with legend')
+ax0.text(3, 4, 'boxed italics text in data coords')
 
 ax1.hist(x, n_bins, normed=1, histtype='bar', stacked=True)
 ax1.set_title('stacked bar')
