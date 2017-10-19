@@ -3,7 +3,7 @@ import numpy as np
 
 plt.figure(1)                # the first figure
 
-## subplot( 'number of subdivisions', 'first figure', 'curret possition in this structure')
+## subplot( 'number of rows', 'number of columns', 'curret possition in this structure')
 
 plt.subplot(211)             # the first subplot in the first figure
 
