@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-ax = plt.subplot(111)
+ax = plt.subplot(111) # == plt.figure()
 
 x = np.random.randn(10000)
 
