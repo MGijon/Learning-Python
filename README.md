@@ -23,3 +23,8 @@ This code is just for my own learning purpose.
 
 
 * Seaborn : examples with Seaborn library.
+
+
+3. **Numpy**:
+
+    Differents examples and explanations of how some Numpy objects work.
