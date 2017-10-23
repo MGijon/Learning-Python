@@ -6,3 +6,5 @@ This code is just for my own learning purpose.
   https://www.youtube.com/watch?v=MgRdg3s8n3E
 
 
+- Graphics:
+  Diferents examples od diferent kinds of graphics for many sources.
