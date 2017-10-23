@@ -46,12 +46,11 @@ fig, ax = plt.subplots(figsize = (3, 3))
 ax.text(0.5, 0.5, "Test", size = 30, va = "center", ha = "center",
         bbox = dict(boxstyle = custom_box_style, alpha = 0.2))
 
-plt.savefig("Custom_Bozes_a.png")
+plt.savefig("Custom_Boxes_a.png")
 
 plt.show()
 
-
-## ==========================================================================
+## =========================================
 
 from matplotlib.patches import BoxStyle
 import matplotlib.pyplot as plt
@@ -125,6 +124,10 @@ ax.text(0.5, 0.5, "Test", size = 30, va = "center", ha = "center", rotation = 30
 
 del BoxStyle._style_list["angled"]
 
-plt.savefig("Custom_Bozes_b.png")
+plt.savefig("Custom_Boxes_b.png")
 
 plt.show()
+
+
+# source 1 : https://matplotlib.org/gallery/userdemo/custom_boxstyle01.html
+# source 2 : https://matplotlib.org/devdocs/gallery/userdemo/custom_boxstyle02.html#sphx-glr-gallery-userdemo-custom-boxstyle02-py
