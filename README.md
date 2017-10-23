@@ -14,7 +14,13 @@ This code is just for my own learning purpose.
    Differents examples od diferent kinds of graphics for many sources.
 
 
-...*Histograms : examples of some kinds of histograms.
-...*Image : examples of image manipulation.
-...*Pyplot : examples with Pyplot library.
-...*Seaborn : examples with Seaborn library.
+* Histograms : examples of some kinds of histograms.
+
+
+* Image : examples of image manipulation.
+
+
+* Pyplot : examples with Pyplot library.
+
+
+* Seaborn : examples with Seaborn library.
