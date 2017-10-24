@@ -163,18 +163,169 @@ print(a)                            # [[ 0  1  2  3  4]
 print(a.shape)                      # (3, 5)
 
 
+print('=========================')
+
+##  ARRAY INDEXING:
+##  ===============
+
+
+# (1) Basic Slicing and Indexing:
+# -------------------------------
+
+
+## INDEXING:
+
+print('Array Indexing:')
+
+x = np.array([[1, 2, 3], [4, 5, 6]], np.int32)
+
+print(x.shape)                      # (2, 3)    "two rows and three columns"
+
+print(x[1, 2])                      # 6          The element of x in the *second* row, *third* column, namely, 6.
+
+
+print('=========================')
+
+
+## SLICING:
+
+x = np.array([1., 2., 3., 4., 5., 6., 7., 8., 9., 10.], dtype = np.float64)
+
+print('Array Slicing:')
+
+# Example 0:
+
+print(x[0:4])                       # [ 1.  2.  3.  4.]
+print(x[0:6])                       # [ 1.  2.  3.  4.  5.  6.]
+
+# Example 1:
+
+# start:stop:step
+
+print(x[1:10:3])                    # [ 2.  5.  8.]
+print(x[2:10:2])                    # [ 3.  5.  7.  9.]
+
+# Example 2:
+
+print(x[-1:10])                     # [ 10.]
+print(x[-2:10])                     # [  9.  10.]
+print(x[-3:10])                     # [  8.   9.  10.]
+
+print(x[1:-9])                      # []
+print(x[1:-8])                      # [ 2.]
+print(x[1:-7])                      # [ 2.  3.]
+print(x[0:-7])                      # [ 1.  2.  3.]
+
+print(x[3:])                        # [  4.   5.   6.   7.   8.   9.  10.]
+print(x[:4])                        # [ 1.  2.  3.  4.]
+
+print('=========================')
+
+x = np.array([[[1],[2],[3]], [[4],[5],[6]]])
+
+print(x.shape)                      # (2, 3, 1)
+print(x)                            # [[[1]
+                                    #   [2]
+                                    #   [3]]
+
+                                    #  [[4]
+                                    #   [5]
+                                    #   [6]]]
+
+# Example 3:
+
+print(x[1:2])                       #  [[4]
+                                    #   [5]
+                                    #   [6]]]
+
+print(x[1:])                        # prints the same as before
+print(x[1::])                       # prints the same as before
+print(x[1:2:1])                     # prints the same as before
+
+print(x[0:])                        # [[[1]
+                                    #   [2]
+                                    #   [3]]
+
+                                    # [[4]
+                                    #  [5]
+                                    #  [6]]]
+
+
+print(x[1:1:1])                     # []
+print(x[4:4:2])                     # []
+
+print(x[0:4:2])                     # [[[1]
+                                    #   [2]
+                                    #   [3]]]
+
+print(x[1:4:2])                     # [[[4]
+                                    #   [5]
+                                    #   [6]]]
+
+# Example 4:
+
+x = np.array([[1., 2., 3., 4., 5.], [6., 7., 8., 9., 10.]], dtype = np.float64)
+
+print(x.shape)                      # (2, 5)
+print(x)                            # [[  1.   2.   3.   4.   5.]
+                                    #  [  6.   7.   8.   9.  10.]]
+
+
+print(x[0:4])                       # [[  1.   2.   3.   4.   5.]
+                                    #  [  6.   7.   8.   9.  10.]]
+
+print(x[4:8])                       # []
+print(x[8:])                        # []
+
+print(x[0, 1])                      # 2.0                      indexing
+print(x[0:1])                       # [[ 1.  2.  3.  4.  5.]]
+
+print(x[0:2])                       # [[  1.   2.   3.   4.   5.]
+                                    #  [  6.   7.   8.   9.  10.]]
+print('WORKING HERE!!!!')
+
+print(x[:,1])                       # [ 2.  7.]                   all the rows, second column
+print(x[1,:])                       # [  6.   7.   8.   9.  10.]  second row, all the columns
+print(x[0, 3:4])                    # [ 4.]                       first row, 3-(3-1) column
+print(x[1, 0:3])                    # [ 6.  7.  8.]               second row, columns from 0 to 2
+print('WORKING HERE!!!!')
+
+
+'''
+# (1.1) ELLIPSIS:
+# ---------------
+
+# Expand to the number of : objects needed to make a selection tuple of the same length as x.ndim.
+# There may only be a single ellipsis present.
+
+print(x[...,0])                     # [[1 2 3]
+                                    #  [4 5 6]]
+
+# (1.2) NEWAXIS:
+# --------------
+
+# Each newaxis object in the selection tuple serves to expand the dimensions of the resulting selection
+# by one unit-length dimension.
+# The added dimension is the position of the newaxis object in the selection tuple.
+
+print(x[:,np.newaxis,:,:].shape)   # (2, 1, 3, 1)
+print(x[:,np.newaxis,:,:])         # [[[[1]
+                                   #    [2]
+                                   #    [3]]]
+
+                                   # [[[4]
+                                   #   [5]
+                                   #   [6]]]]
+
+
+# (1) Advanced Indexing:
+# ----------------------
 
 
 
 
 
-
-
-
-
-
-
-
+'''
 
 
 # source 1 : https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.ndarray.html
@@ -182,3 +333,5 @@ print(a.shape)                      # (3, 5)
 # source 3 : https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.empty.html#numpy.empty
 # source 4 : https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.ndarray.T.html#numpy.ndarray.T
 # source 5 : https://docs.scipy.org/doc/numpy-1.13.0/user/quickstart.html#printing-arrays
+# source 6 : https://docs.scipy.org/doc/numpy-1.13.0/reference/arrays.indexing.html#arrays-indexing
+# source 7 : http://scipy-cookbook.readthedocs.io/items/Indexing.html
