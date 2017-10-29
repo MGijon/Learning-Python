@@ -282,24 +282,34 @@ print(x[0:1])                       # [[ 1.  2.  3.  4.  5.]]
 
 print(x[0:2])                       # [[  1.   2.   3.   4.   5.]
                                     #  [  6.   7.   8.   9.  10.]]
-print('WORKING HERE!!!!')
 
 print(x[:,1])                       # [ 2.  7.]                   all the rows, second column
 print(x[1,:])                       # [  6.   7.   8.   9.  10.]  second row, all the columns
 print(x[0, 3:4])                    # [ 4.]                       first row, 3-(3-1) column
 print(x[1, 0:3])                    # [ 6.  7.  8.]               second row, columns from 0 to 2
-print('WORKING HERE!!!!')
 
 
-'''
+
+
+
 # (1.1) ELLIPSIS:
 # ---------------
 
 # Expand to the number of : objects needed to make a selection tuple of the same length as x.ndim.
 # There may only be a single ellipsis present.
 
-print(x[...,0])                     # [[1 2 3]
-                                    #  [4 5 6]]
+x = np.array([[1., 2., 3., 4., 5.], [6., 7., 8., 9., 10.]], dtype = np.float64)
+
+print(x[...,0])                     # [ 1.  6.]
+
+
+x = np.array([[1., 2., 3.], [4., 5., 6.] , [7., 8., 9.]], dtype = np.float64)
+
+print(x[...,0])                     # [ 1.  4.  7.]
+print(x[...,1])                     # [ 2.  5.  8.]
+print(x[...,2])                     # [ 3.  6.  9.]
+
+
 
 # (1.2) NEWAXIS:
 # --------------
@@ -308,14 +318,26 @@ print(x[...,0])                     # [[1 2 3]
 # by one unit-length dimension.
 # The added dimension is the position of the newaxis object in the selection tuple.
 
-print(x[:,np.newaxis,:,:].shape)   # (2, 1, 3, 1)
-print(x[:,np.newaxis,:,:])         # [[[[1]
-                                   #    [2]
-                                   #    [3]]]
+x = np.array([[1., 2., 3.], [4., 5., 6.] , [7., 8., 9.]], dtype = np.float64)
 
-                                   # [[[4]
-                                   #   [5]
-                                   #   [6]]]]
+print(x.shape)                   # (3, 3)
+
+print(x[:,np.newaxis,:].shape)   # (3, 1, 3))
+print(x[:,np.newaxis,:])         # [[[ 1.  2.  3.]]
+
+                                 #  [[ 4.  5.  6.]]
+
+                                 #  [[ 7.  8.  9.]]]
+
+x = np.array([[1., 2., 3., 4., 5.], [6., 7., 8., 9., 10.]], dtype = np.float64)
+print('WORKING HERE!!!!')
+
+print(x.shape)                    # (2, 5)
+
+print(x[:, np.newaxis].shape)     # (2, 1, 5)
+print(x[:, np.newaxis])           # [[[  1.   2.   3.   4.   5.]]
+
+                                  #  [[  6.   7.   8.   9.  10.]]]
 
 
 # (1) Advanced Indexing:
@@ -324,8 +346,6 @@ print(x[:,np.newaxis,:,:])         # [[[[1]
 
 
 
-
-'''
 
 
 # source 1 : https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.ndarray.html
