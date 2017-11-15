@@ -28,3 +28,7 @@ This code is just for my own learning purpose.
 3. **Numpy**:
 
     Differents examples and explanations of how some Numpy objects work.
+
+4. **SciPy**:
+
+    Differents examples and explanations of how some SciPy objects work.
