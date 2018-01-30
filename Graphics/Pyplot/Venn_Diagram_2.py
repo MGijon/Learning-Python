@@ -17,7 +17,7 @@ venn3(subsets = (1, 1, 1, 1, 1, 1, 1), set_labels = ('A', 'B', 'C'), ax = axes[1
 # 4:
 venn3_circles({'001': 10, '100': 20, '010': 21, '110': 13, '011': 14}, ax = axes[1][1])
 
-plt.savefig('Venn_Diagram_2_1.png')
+#plt.savefig('Venn_Diagram_2_1.png')
 plt.show()
 
 ## ========== ##
@@ -32,7 +32,7 @@ set3 = set(['C', 'D',' E', 'F', 'G'])
 venn3([set1, set2, set3], ('Set1', 'Set2', 'Set3'))
 
 plt.title('Example 2')
-plt.savefig('Venn_Diagram_2_2.png')
+#plt.savefig('Venn_Diagram_2_2.png')
 plt.show()
 
 ## ========== ##
@@ -47,5 +47,5 @@ S3 = set(['Marta', 'María Luisa'])
 venn3([S1, S2, S3], ('Grupo 1', 'Grupo 2', 'Grupo 3'))
 
 plt.title('Example 3')
-plt.savefig('Venn_Diagram_2_3.png')
+#plt.savefig('Venn_Diagram_2_3.png')
 plt.show()
