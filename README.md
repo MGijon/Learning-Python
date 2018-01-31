@@ -51,5 +51,5 @@ This code is just for my own learning purpose.
 
 9. **Kung Fu al amanecer con itertools**:
 
-    Study of ['Víctor Terrón - Kung Fu al amanecer con itertools'] (https://www.youtube.com/watch?v=4ZIxcdREYVc) (by Victor Terrón).
+    Study of ['Víctor Terrón - Kung Fu al amanecer con itertools'] (https://www.youtube.com/watch?v=4ZIxcdREYVc).
 
