@@ -24,7 +24,7 @@ PARAMETERS:
 ##  CONSTRUCTOR:
 ##  ============
 
-# if we do this jus obtain a regular python list
+# if we do this just obtain a regular python list
 
 y = [[1, 2], [3, 4]]
 
