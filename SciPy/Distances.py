@@ -10,3 +10,5 @@ Y = np.array([x for x in range(10, 21)], dtype = float)
 #print(X*Y) # observemos como detalle (no es el objeto de esto) que multiplica elemento a elemento los vectores
 
 # ahora empezamos a jugar con las distancias definidas en scipy
+#print(sklearn.metrics.pairwise.cosine_similarity(X, Y))
+print(scipy.spatial.distance.pdist(X, Y))  # no importa el paquete, no sé por qué aún
