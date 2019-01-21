@@ -2,26 +2,21 @@ import pygame
 
 pygame.init()
 
-# Define some colors
 BLACK = ( 0, 0, 0)
 WHITE = ( 255, 255, 255)
 GREEN = ( 0, 255, 0)
 RED = ( 255, 0, 0)
 
 
-# Open a new window
 size = (700, 500)
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("3 En Raya")
 
 
-# The loop will carry on until the user exit the game (e.g. clicks the close button).
 carryOn = True
 
-# The clock will be used to control how fast the screen updates
 clock = pygame.time.Clock()
 
-# -------- Main Program Loop -----------
 while carryOn:
     # --- Main event loop
     for event in pygame.event.get(): # User did something
