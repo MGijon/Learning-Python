@@ -1,21 +1,30 @@
 import pygame
+from Ship import Ship
 
 pygame.init()
 
+# Definimos los colores que utilizaremos
 BLACK = ( 0, 0, 0)
 WHITE = ( 255, 255, 255)
 GREEN = ( 0, 255, 0)
 RED = ( 255, 0, 0)
 
-
+# Inicializamos la pantalla
 size = (700, 500)
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("3 En Raya")
 
-
+# Booleano que nos indica si paramos el juego
 carryOn = True
 
 clock = pygame.time.Clock()
+
+
+class Pieza(pygame.sprite.Sprite):
+    """docstring for ."""
+    def __init__(self, color, width, height):
+        super(, self).__init__()
+        self.arg = arg
 
 while carryOn:
     for event in pygame.event.get(): # User did something
