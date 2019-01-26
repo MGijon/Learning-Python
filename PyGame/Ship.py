@@ -1,7 +1,11 @@
 import pygame
-WHITE = (255, 255, 255)
 
-class Car(pygame.sprite.Sprite):
+BLACK = ( 0, 0, 0)
+WHITE = ( 255, 255, 255)
+GREEN = ( 0, 255, 0)
+RED = ( 255, 0, 0)
+
+class Ship(pygame.sprite.Sprite):
     #This class represents a car. It derives from the "Sprite" class in Pygame.
 
     def __init__(self, color, width, height):
