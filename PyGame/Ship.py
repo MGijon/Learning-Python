@@ -6,7 +6,6 @@ GREEN = ( 0, 255, 0)
 RED = ( 255, 0, 0)
 
 class Ship(pygame.sprite.Sprite):
-    #This class represents a car. It derives from the "Sprite" class in Pygame.
 
     def __init__(self, color, width, height):
         # Call the parent class (Sprite) constructor
@@ -26,3 +25,11 @@ class Ship(pygame.sprite.Sprite):
 
         # Fetch the rectangle object that has the dimensions of the image.
         self.rect = self.image.get_rect()
+
+        # Variables 'custom'
+        self.position = (0, 0) # posición inicial
+        self.life = 10 # valor por defecto de la clase nave
+
+
+    @property
+    def position(self): return self.position;
