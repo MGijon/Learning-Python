@@ -32,4 +32,9 @@ class Ship(pygame.sprite.Sprite):
 
 
     @property
-    def position(self): return self.position;
+    def position(self):
+        ''' funciona como un getter '''
+        return self.position;
+    @position.setter
+    def positio(self, newPosition):
+        self.position = newPosition;
