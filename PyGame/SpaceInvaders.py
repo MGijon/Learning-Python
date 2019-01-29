@@ -23,7 +23,7 @@ clock = pygame.time.Clock()
 class Pieza(pygame.sprite.Sprite):
     """docstring for ."""
     def __init__(self, color, width, height):
-        super(, self).__init__()
+        super(self).__init__()
         self.arg = arg
 
 while carryOn:
@@ -47,7 +47,7 @@ while carryOn:
 
      # --- Limit to 60 frames per second
     clock.tick(60)
-
+    s = Ship()
 #Once we have exited the main program loop we can stop the game engine:
 pygame.quit()
 
