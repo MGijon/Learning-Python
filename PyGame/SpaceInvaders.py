@@ -37,17 +37,17 @@ while carryOn:
      # First, clear the screen to white
     screen.fill(WHITE)
      #The you can draw different shapes and lines or add text to your background stage.
-    pygame.draw.rect(screen, RED, [55, 200, 100, 70],0)
-    pygame.draw.line(screen, GREEN, [0, 0], [100, 100], 5)
-    pygame.draw.ellipse(screen, BLACK, [20,20,250,100], 2)
-
-
+    #pygame.draw.rect(screen, RED, [55, 200, 100, 70],0)
+    #pygame.draw.line(screen, GREEN, [0, 0], [100, 100], 5)
+    #pygame.draw.ellipse(screen, BLACK, [20,20,250,100], 2)
+    s = Ship(screen)
+    s.draw()
      # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
 
      # --- Limit to 60 frames per second
     clock.tick(60)
-    s = Ship()
+
 #Once we have exited the main program loop we can stop the game engine:
 pygame.quit()
 
