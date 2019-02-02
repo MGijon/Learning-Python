@@ -14,7 +14,7 @@ class Ship(pygame.sprite.Sprite):
     life = 10
 
     def __init__(self, screen):
-        # Call the parent class (Sprite) constructor
+
         super().__init__()
 
         # Pass in the color of the car, and its x and y position, width and height.
@@ -32,7 +32,7 @@ class Ship(pygame.sprite.Sprite):
         # Fetch the rectangle object that has the dimensions of the image.
         self.rect = self.image.get_rect()
 
-        self.screen = screen
+        #self.screen = screen
 
     @property
     def position(self):
@@ -52,10 +52,15 @@ class Ship(pygame.sprite.Sprite):
     def life(self, newLife):
         self.life = newLife;
 
-    def draw(self, x, y):
-        pygame.draw.rect(self.screen, self.color, [y + 55, x + 200, x + 100, y + 70],0)
+#    def draw(self, x, y):
+#        pygame.draw.rect(self.screen, self.color, [y + 55, x + 200, x + 100, y + 70],0)
 
 
+    def moveRight(self, pixels):
+        self.rect.x += pixels
+
+    def moveLeft(self, pixels):
+        self.rect.x -= pixels
 
 
 #El soñador de providence
