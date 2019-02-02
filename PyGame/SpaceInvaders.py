@@ -26,6 +26,8 @@ class Pieza(pygame.sprite.Sprite):
         super(self).__init__()
         self.arg = arg
 
+s = Ship(screen)
+
 while carryOn:
     for event in pygame.event.get(): # User did something
         if event.type == pygame.QUIT: # If user clicked close
@@ -36,12 +38,10 @@ while carryOn:
      # --- Drawing code should go here
      # First, clear the screen to white
     screen.fill(WHITE)
-     #The you can draw different shapes and lines or add text to your background stage.
-    #pygame.draw.rect(screen, RED, [55, 200, 100, 70],0)
-    #pygame.draw.line(screen, GREEN, [0, 0], [100, 100], 5)
-    #pygame.draw.ellipse(screen, BLACK, [20,20,250,100], 2)
-    s = Ship(screen)
-    s.draw()
+
+    i = 1
+    s.draw(x = i, y = 1)
+
      # --- Go ahead and update the screen with what we've drawn.
     pygame.display.flip()
 

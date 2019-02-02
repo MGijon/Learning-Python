@@ -52,8 +52,10 @@ class Ship(pygame.sprite.Sprite):
     def life(self, newLife):
         self.life = newLife;
 
-    def draw(self):
-        pygame.draw.rect(self.screen, self.color, [55, 200, 100, 70],0)
+    def draw(self, x, y):
+        pygame.draw.rect(self.screen, self.color, [y + 55, x + 200, x + 100, y + 70],0)
+
+
 
 
 #El soñador de providence
