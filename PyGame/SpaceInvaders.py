@@ -11,7 +11,6 @@ RED = ( 255, 0, 0)
 SCREENWIDTH=400
 SCREENHEIGHT=500
 
-
 size = (SCREENWIDTH, SCREENHEIGHT)
 screen = pygame.display.set_mode(size)
 pygame.display.set_caption("Spaca Invaders")
@@ -27,12 +26,11 @@ ship = Ship(screen)
 ship.rect.x = 200
 ship.rect.y = 300
 
-# Add the car to the list of objects
-all_sprites_list.add(ship)
+all_sprites_list.add(ship) # Add the car to the list of objects
 
 
 while carryOn:
-    for event in pygame.event.get(): # User did something
+    for event in pygame.event.get():
         if event.type == pygame.QUIT: # If user clicked close
               carryOn = False # Flag that we are done so we exit this loop
         elif event.type==pygame.KEYDOWN:
@@ -45,22 +43,12 @@ while carryOn:
     if keys[pygame.K_RIGHT]:
         ship.moveRight(5)
 
-     # --- Game logic should go here
+    screen.fill(BLACK)
+    all_sprites_list.update()
 
-     # --- Drawing code should go here
-     # First, clear the screen to white
-#    screen.fill(WHITE)
-
-    #Now let's draw all the sprites in one go. (For now we only have 1 sprite!)
     all_sprites_list.draw(screen)
-    #Refresh Screen
-    pygame.display.flip()
 
-#    i = 1
-#    ship.draw(x = i, y = 1)
-
-     # --- Go ahead and update the screen with what we've drawn.
-    pygame.display.flip()
+    pygame.display.flip() #Refresh Screen
 
      # --- Limit to 60 frames per second
     clock.tick(60)
