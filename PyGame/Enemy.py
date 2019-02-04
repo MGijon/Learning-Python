@@ -5,15 +5,15 @@ WHITE = ( 255, 255, 255)
 GREEN = ( 0, 255, 0)
 RED = ( 255, 0, 0)
 
-class Ship(pygame.sprite.Sprite):
+class Enemy(pygame.sprite.Sprite):
 
-    color = GREEN
+    color = RED
     width = 10
     height = 10
     position = (0, 0)
-    life = 10
+    life = 1
 
-    def __init__(self, screen):
+    def __init__(self):
 
         super().__init__()
 
@@ -34,33 +34,20 @@ class Ship(pygame.sprite.Sprite):
 
         #self.screen = screen
 
-    @property
-    def position(self):
-        ''' funciona como un getter '''
-        return self.position;
 
-    @position.setter
-    def position(self, newPosition):
-        self.position = newPosition;
+        @property
+        def position(self):
+            return self.position
 
-    @property
-    def life(self):
-        ''' funciona como un getter '''
-        return self.life;
+        @position.setter
+        def position(self, newPosition):
+            self.position = newPosition
 
-    @life.setter
-    def life(self, newLife):
-        self.life = newLife;
+        @property
+        def life(self):
+            self.life
 
-#    def draw(self, x, y):
-#        pygame.draw.rect(self.screen, self.color, [y + 55, x + 200, x + 100, y + 70],0)
-
-
-    def moveRight(self, pixels):
-        self.rect.x += pixels
-
-    def moveLeft(self, pixels):
-        self.rect.x -= pixels
-
-
-#El soñador de providence
+        @life.setter
+        def life(self, newLife):
+            self.life = newLife
+            

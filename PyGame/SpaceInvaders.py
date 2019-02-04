@@ -1,5 +1,6 @@
 import pygame
 from Ship import Ship
+from Enemy import Enemy
 
 pygame.init()
 
@@ -43,9 +44,15 @@ while carryOn:
     if keys[pygame.K_RIGHT]:
         ship.moveRight(5)
 
-    screen.fill(BLACK)
+
+
     all_sprites_list.update()
 
+    # lógica del juego aquí
+
+
+
+    screen.fill(BLACK)
     all_sprites_list.draw(screen)
 
     pygame.display.flip() #Refresh Screen
