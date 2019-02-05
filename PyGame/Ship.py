@@ -23,7 +23,7 @@ class Ship(pygame.sprite.Sprite):
         self.image.fill(WHITE)
         self.image.set_colorkey(WHITE)
 
-        # Draw the car (a rectangle!)
+        # Draw a rectangle
         pygame.draw.rect(self.image, self.color, [0, 0, self.width, self.height])
 
         # Instead we could load a proper pciture of a car...

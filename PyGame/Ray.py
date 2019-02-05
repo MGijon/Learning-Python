@@ -5,16 +5,9 @@ WHITE = ( 255, 255, 255)
 GREEN = ( 0, 255, 0)
 RED = ( 255, 0, 0)
 
-class Enemy(pygame.sprite.Sprite):
+class Ray(object):
 
-    color = RED
-    width = 10
-    height = 10
-    position = (0, 0)
-    life = 1
-
-    def __init__(self):
-
+    def __init__(self, arg):
         super().__init__()
 
         # Pass in the color of the car, and its x and y position, width and height.
@@ -23,7 +16,6 @@ class Enemy(pygame.sprite.Sprite):
         self.image.fill(WHITE)
         self.image.set_colorkey(WHITE)
 
-        # Draw a rectangle
         pygame.draw.rect(self.image, self.color, [0, 0, self.width, self.height])
 
         # Instead we could load a proper pciture of a car...
@@ -31,22 +23,3 @@ class Enemy(pygame.sprite.Sprite):
 
         # Fetch the rectangle object that has the dimensions of the image.
         self.rect = self.image.get_rect()
-
-        #self.screen = screen
-
-
-        @property
-        def position(self):
-            return self.position
-
-        @position.setter
-        def position(self, newPosition):
-            self.position = newPosition
-
-        @property
-        def life(self):
-            self.life
-
-        @life.setter
-        def life(self, newLife):
-            self.life = newLife
